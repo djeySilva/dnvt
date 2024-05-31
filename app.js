@@ -35,6 +35,11 @@ app.get('/authenticate/:bi/:matricula', (req, res) => {
 })
 
 
+app.get('/', (req, res)=>{
+    res.send('Hellow World');
+})
+
+
 app.get('/filterFinesText/:id/:text', (req, res) => {
     const text = req.params.text
     const iduser = req.params.id
